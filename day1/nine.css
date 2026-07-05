@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9bfbf;
+    color: #333;
+    line-height: 1.6;
+}
