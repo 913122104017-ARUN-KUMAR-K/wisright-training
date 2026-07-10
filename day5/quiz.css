@@ -1,0 +1,132 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Main Container */
+.quiz-container{
+    width:400px;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+}
+
+/* Sections */
+section{
+    margin-bottom:20px;
+}
+
+/* Headings */
+h2,h3,h4{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+/* Paragraph */
+p{
+    margin-bottom:10px;
+}
+
+/* Buttons */
+button{
+    padding:10px;
+    margin:5px;
+    border:none;
+    background:blue;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkblue;
+}
+
+/* Question */
+#question-container{
+    margin:15px 0;
+}
+
+/* Options */
+#options-container{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.op-btn{
+    width:100%;
+    background:white;
+    color:black;
+    border:1px solid gray;
+}
+
+.op-btn:hover{
+    background:lightgray;
+}
+
+/* Option States */
+.selected{
+    background:orange;
+    color:white;
+}
+
+.correct{
+    background:green;
+    color:white;
+}
+
+.incorrect{
+    background:red;
+    color:white;
+}
+
+/* Navigation */
+#navigation{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+/* Score */
+#quiz-score{
+    text-align:center;
+}
+
+/* History */
+#quiz-history{
+    border:1px solid gray;
+    padding:10px;
+    border-radius:5px;
+}
+
+#history-list{
+    list-style:none;
+}
+
+#history-list li{
+    padding:8px;
+    margin:5px 0;
+    background:#eee;
+    border-radius:5px;
+}
+
+/* Initially Hide */
+#quiz-question,
+#quiz-score,
+#quiz-history{
+    display:none;
+}

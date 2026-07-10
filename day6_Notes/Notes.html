@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Notes App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Notes.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ==========================
+             HEADER
+        =========================== -->
+        <header>
+            <h1>Take Notes</h1>
+            <button id="theme-btn">🌙</button>
+        </header>
+        
+        <main>
+
+            <!-- ==========================
+                 ADD NOTE FORM
+            =========================== -->
+            <section id="input-sec">
+
+                <form id="note-form">
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter the title"
+                        required
+                    >
+
+                    <textarea
+                        id="content"
+                        placeholder="Enter note content"
+                        required
+                    ></textarea>
+
+                    <input
+                        type="color"
+                        id="color"
+                        value="#4169e1"
+                    >
+
+                    <button id="add-btn">
+                        Add Note
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- ==========================
+                 SEARCH & SORT
+            =========================== -->
+            <section id="search-section">
+
+                <div class="searchbox">
+
+                    <select id="sort">
+                        <option value="new">Newest</option>
+                        <option value="old">Oldest</option>
+                        <option value="title">A-Z</option>
+                    </select>
+
+                    <input
+                        type="text"
+                        id="searchtext"
+                        placeholder="Search notes..."
+                    >
+
+                    <button id="search-btn">
+                        Search
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section id="note-section">
+
+            </section>
+
+        </main>
+
+        <!-- ==========================
+             FOOTER
+        =========================== -->
+        <footer>
+            <p>&copy; 2026 Notes App. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Notes.js"></script>
+
+</body>
+
+</html>

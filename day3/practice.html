@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+       <ul id="hi"></ul>
+       <p id="hello">hello word</p>
+       <p id="count"></p>
+       <button id="btn">+</button>
+    <button>-</button>
+            <script>
+               let a = document.createElement('p');
+               a.textContent="heloo word"
+                document.body.append(a);
+                let b =document.getElementById('hi');
+                b.appendChild(document.createElement('li')).textContent="apple";
+                   b.appendChild(document.createElement('li')).textContent="orange";
+                      b.appendChild(document.createElement('li')).textContent="banana";
+                         b.appendChild(document.createElement('li')).textContent="pineapple";
+                            b.appendChild(document.createElement('li')).textContent="grapes";
+
+                            a.remove();
+                    document.getElementById('hello').replaceWith(document.createElement('h1').textContent="hello word");
+                    let c=0;
+                document.getElementById('btn').addEventListener('click',function(){
+                    c++;
+                    document.getElementById('count').textContent=c;
+                })
+                document.getElementById('btn').nextElementSibling.addEventListener('click',function(){
+                    c--;
+                    document.getElementById('count').textContent=c;
+                })
+            </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+}
+
+.container{
+    width:400px;
+    margin:30px auto;
+    padding:20px;
+    height: 100%;
+    border:2px solid lightblue;
+    background-color:aqua;
+}
+
+#taskInput{
+    width:60%;
+    height:35px;
+    background-color:lightgray;
+    color:black;
+}
+
+#addBtn{
+    width:80px;
+    height:40px;
+    background-color:green;
+    color:white;
+    border:none;
+}
+
+#addBtn:hover{
+    background-color:darkgreen;
+    cursor:pointer;
+}
+
+#taskList{
+    color:brown;
+    font-family:sans-serif;
+    font-size:20px;
+}
+
+header,
+footer{
+    text-align:center;
+    color:brown;
+    border:2px solid rgb(27,68,81);
+    background-color:lightblue;
+    padding:10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

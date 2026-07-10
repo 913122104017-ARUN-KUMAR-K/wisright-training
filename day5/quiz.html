@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<main class="quiz-container">
+
+    <!-- Start Screen -->
+    <section id="start-quiz">
+        <h2>Quiz App</h2>
+        <p>Start the Quiz</p>
+        <button id="start">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz-question">
+
+        <p id="question-number">Question 1 of 5</p>
+
+        <div id="question-container">
+            <h3 id="question-text">Question goes here</h3>
+        </div>
+
+        <div id="options-container"></div>
+
+        <div id="navigation">
+            <button id="pre">Previous</button>
+            <button id="next">Next</button>
+            <button id="submit">Submit</button>
+        </div>
+
+    </section>
+
+    <!-- Result Screen -->
+    <section id="quiz-score">
+
+        <h4>Quiz Result</h4>
+
+        <p id="final-score"></p>
+
+        <button id="history">View History</button>
+
+        <button id="restart">Restart Quiz</button>
+
+    </section>
+
+    <!-- History Screen -->
+    <section id="quiz-history">
+
+        <h4>Quiz History</h4>
+
+        <ul id="history-list"></ul>
+
+        <button id="clear">Clear History</button>
+
+    </section>
+
+</main>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

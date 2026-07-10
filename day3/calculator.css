@@ -1,0 +1,51 @@
+ button{
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+button:hover{
+    color: white;
+}
+#container{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap:20px 30px;
+   margin-top: 50px;
+}
+#calculate{
+ display: block;
+    margin: 20px auto;
+}
+#display{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: lightgray;
+}
+
+#calculator{
+    padding: 30px;
+  background-color: rgb(215, 204, 204);
+}
+body{
+    background-color: lightgray;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(65, 53, 53);
+}
+footer{
+    
+    margin-top: 150px;
+    margin-right:50px;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
